@@ -2,9 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve with the Contact Seabreeze Coastal Retreat. We come to assist you in planning your ideal Mediterranean vacation.">
+    <title>Contact Us | Seabreeze Coastal Retreat</title>
+    <link rel="stylesheet" href="root/style.css">
 </head>
 <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Seabreeze</h1>
+                    <p class="tagline">Coastal Retreat</p>
+                </div>
+                <ul class="nav-link">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About & Gallery</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Need any questions answered about where you are staying? Want to make booking? were here to help! Either complete the form or contact us directly by using the following contact details.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Locations</h3>
+                                <p>Coastal Boulevard, Mediterranean Coast</p>
+                                <p>Valencia, Spain 46001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@seasbreezeecoastal.com">info@seabreezeecoastal.com</a></p>
+                                <p><a href="mailto:bookings@seabreezecoastal.com">bookings@seabreezeccoastal.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📲</div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+90 412 619 311">+90 412 619 311</a></p>
+                                <p>Available: 9 AM - 8 AM (CET)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h3>Check-in / Check-out</h3>
+                                <p>Check-in: 3:00 PM</p>
+                                <p>Check-out: 11:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactingForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+90 412 619 311">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="checkIn">Check-in Date</label>
+                            <input type="date" id="checkIn" name="checkIn">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="">Select...</option>
+                                <option value="1">1 Guests</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5+ Guests</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Share your plans or any of your special needs"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                    
+                    <div id="successMessage" class="succes-message" style="display: none;">
+                        <p>Thank you! We have successfully passed your message on. We'll get back to you soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2></h2>
+        </div>
+    </section>
 
 </body>
 </html>
