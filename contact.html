@@ -73,7 +73,7 @@
                     <h2>Send Us a Message</h2>
                     <form id="contactingForm" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required placeholder="John Doe">
                             <span class="error-message" id="nameError"></span>
                         </div>
@@ -86,16 +86,16 @@
                         
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+90 412 619 311">
+                            <input type="tel" id="phone" name="phone" placeholder="+90...">
                         </div>
                         
                         <div class="form-group">
-                            <label for="checkIn">Check-in Date</label>
+                            <label for="checkIn">Check-in Date *</label>
                             <input type="date" id="checkIn" name="checkIn">
                         </div>
                         
                         <div class="form-group">
-                            <label for="guests">Number of Guests</label>
+                            <label for="guests">Number of Guests *</label>
                             <select id="guests" name="guests">
                                 <option value="">Select...</option>
                                 <option value="1">1 Guests</option>
@@ -132,9 +132,52 @@
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.24345437406!2d-0.5040989999999999!3d39.4699075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia%2C%20Spain!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
-                width=""
-                
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Seabreeze Coastal Retreat Location">
+            </iframe>
+        </div>
     </section>
+
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Book Your Stay?</h2>
+            <p>Don't wait - our coastal paradise is waiting for you!</p>
+            <a href="mailto:vookings@seabreezecoastal.com" class="btn-primary">Email Us Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Seabreeze Coastal Retreat</h3>
+                    <p>Your Mediterranean paradise awaits</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About & Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <p>Email: info@seabreezecoastal.com</p>
+                    <p>Phone: +90 412 619 311</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Seabreeze Coastal Retreat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
